@@ -12,13 +12,13 @@ h3 {
   font-size: 1rem;
 }
 
-.container {
+header {
   display: flex;
-  align-items: center;
 }
 
-.project,
-.skills {
-  display: block;
-  align-items: center;
+img {
+  width: 12rem;
+  height: 12rem;
 }
+
+/* add media queries for mobile first design. Set a breakpoint for small, medium and large screens and make adjustments for the layout with grow and shrink basis */
