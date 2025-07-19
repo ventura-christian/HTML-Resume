@@ -1,7 +1,5 @@
 ## 📄 Welcome to my live resume
 
----
-
 ### 🌱 This is a living document that will be updated as I gain new skills, learn new technologies, or build new projects.
 
 ---
