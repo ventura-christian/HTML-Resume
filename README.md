@@ -8,7 +8,7 @@ This is a living document that will be updated as I gain new skills, learn new t
 
 ### 🔗 Other Links
 
-I will incorporate this resume into my other repository linked <a href="https://github.com/ventura-christian/git-init-my-career">here (Git init my career)</a> which serves as a hangout for the ideas and projects I am currently working on as my path towards employment expands.
+I will incorporate this resume in my other repository, "Git init my career", linked <a href="https://github.com/ventura-christian/git-init-my-career">here </a> which serves as a hangout for the ideas and projects I am currently working on as my path towards employment expands.
 
 ---
 
