@@ -1,4 +1,4 @@
-## 📄 Welcome to my live resume
+## 📄 Welcome to my resume
 
 ### 🌱 Check Back for Updates
 
