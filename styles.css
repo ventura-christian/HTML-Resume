@@ -31,20 +31,38 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+header {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+header div:nth-child(2) {
+  margin-top: 1rem;
+}
+
 a {
   color: #0066cc;
   text-decoration: none;
 }
+
 a:visited {
   color: #5a3d99;
 }
 
+/* Base mobile-first layout: single column */
 .resume {
   width: 100%;
   max-width: var(--max-width);
   background-color: var(--bg-light);
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* Mobile: one column */
   gap: 1.5rem;
   border-radius: 8px;
   box-sizing: border-box;
@@ -62,13 +80,47 @@ footer {
   text-align: center;
 }
 
+/* Tablet & desktop layout */
 @media (min-width: 768px) {
   .resume {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto auto;
+    gap: 1.5rem;
   }
+
+  /* Header, footer, and description span full width */
   header,
-  footer {
+  footer,
+  .description {
     grid-column: span 2;
+  }
+
+  /* Header layout */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  header div:nth-child(1) {
+    flex: 0 0 auto;
+    margin-right: 2rem;
+  }
+
+  header div:nth-child(2) {
+    flex: 1;
+    margin-top: 0;
+  }
+
+  /* Four boxes below description */
+  .technical-skills,
+  .projects,
+  .education,
+  .experience {
+    background: rgba(255, 255, 255, 0.05);
+    padding: var(--padding);
+    border-radius: 8px;
   }
 }
 
@@ -120,6 +172,7 @@ body[data-theme='dark'] .resume {
 body[data-theme='dark'] a {
   color: #66aaff;
 }
+
 body[data-theme='dark'] a:visited {
   color: #cba6ff;
 }
