@@ -9,18 +9,18 @@
       content="This static webpage will be my digital resume. This code will live in a repository on my Github account. This document exists for ease of use and as an easy way to update the document as my understanding of new technologies grow."
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Christian Ventura | Resume</title>
   </head>
-  <body>
-    <div class="#">
+  <body data-theme="light">
+    <!-- This is the button to handle the dark/light mode toggle -->
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    <div class="resume">
       <header>
         <div>
-          <section>
-            <img
-              src="chin copy.jpg"
-              alt="Picture of Christian Ventura wearing a nice white shirt and smiling"
-            />
-          </section>
+          <img
+            src="chin copy.jpg"
+            alt="Christian Ventura smiling in a white shirt"
+          />
         </div>
         <div>
           <h1>Christian Ventura</h1>
@@ -28,74 +28,84 @@
           <section>6600 Beachview Dr. Rancho Palos Verdes, CA 90275</section>
           <section>
             <a href="mailto:cventura64@outlook.com">cventura64@outlook.com</a> |
-            (562)340-5964
+            (562) 340-5964
           </section>
         </div>
       </header>
+
+      <section>
+        <h3>Description</h3>
+        <p>
+          I'm a college student currently pursuing a Bachelor's degree in
+          Information Technology at Arizona State University, with a
+          concentration in full-stack web development. I'm building a strong
+          foundation in HTML, CSS, and JavaScript while expanding into modern
+          developer stacks that connect front-end, back-end, and AI-driven
+          technologies. My goal is to gain hands-on experience through a tech
+          internship—ideally one that involves working with websites,
+          applications, or codebases in a meaningful, production-level
+          environment. I'm eager to contribute, learn, and grow within any area
+          of web or software development that drives real-world impact.
+        </p>
+      </section>
+
+      <section>
+        <h3>Technical Skills</h3>
+        <p>
+          <strong>Languages:</strong> HTML, CSS, JavaScript (ES6+), Java, Python
+        </p>
+        <p><strong>Tools/Platforms:</strong> Git, GitHub, VS Code, MongoDB</p>
+        <p>
+          <strong>Soft Skills:</strong> Communication, Problem-Solving,
+          Collaboration, Research Skills, Creative Thinking, Articulate
+          Communication, Quick Learner
+        </p>
+      </section>
+
+      <section>
+        <h3>Projects</h3>
+        <p>
+          Title: Static Webpage | Summary | Key Features | Stack Used |
+          <a href="#">foo.com</a>
+        </p>
+        <p>
+          Title: Static Webpage | Summary | Key Features | Stack Used |
+          <a href="#">foo.com</a>
+        </p>
+        <p>
+          Title: Static Webpage | Summary | Key Features | Stack Used |
+          <a href="#">foo.com</a>
+        </p>
+      </section>
+
+      <section>
+        <h3>Education</h3>
+        <p>Community College of Allegheny County | Associate's Degree</p>
+        <p>Arizona State University | Bachelor's Degree (In Progress)</p>
+      </section>
+
+      <section>
+        <h3>Experience</h3>
+        <p>
+          UPMC Children's Hospital of Pittsburgh | Patient Care Technician &
+          Patient Transport
+        </p>
+        <p>UPMC Shadyside Hospital | Patient Care Technician</p>
+        <p>Boot.dev: Backend Developer Path</p>
+      </section>
+
+      <footer>
+        <h3>This resume is a live document updated regularly</h3>
+        <a href="#">Github</a> | <a href="#">LinkedIn</a> |
+        <a href="#">Back to Top</a>
+      </footer>
     </div>
-    <div class="#">
-      <h3>Description</h3>
-      <section>
-        I'm a college student currently pursuing a Bachelor's degree in
-        Information Technology at Arizona State University, with a concentration
-        in full-stack web development. I'm building a strong foundation in HTML,
-        CSS, and JavaScript while expanding into modern developer stacks that
-        connect front-end, back-end, and AI-driven technologies. My goal is to
-        gain hands-on experience through a tech internship-ideally one that
-        involves working with websites, applications, or codebases in a
-        meaningful, production-level environment. I'm eager to contribute,
-        learn, and grow within any area of web or software development that
-        drives real-world impact.
-      </section>
-    </div>
-    <div class="#">
-      <h3>Technical Skills</h3>
-      <section>Languages | HTML, CSS, JavaScript (ES6+), Java, Python</section>
-      <section>Tools/Platforms | Git, GitHub, VS Code, MongoDB</section>
-      <section>
-        Soft Skills | Communication, Problem-Solving, Collaboration, Research
-        Skills, Creative Thinking, Articulate Communication, Quick Learner
-      </section>
-    </div>
-    <div class="#">
-      <h3>Projects</h3>
-      <section>
-        Title: Static Webpage | Summary | Key Features | Stack Used |
-        <a href="#">Link: foo.com</a>
-      </section>
-      <section>
-        Title: Static Webpage | Summary | Key Features | Stack Used |
-        <a href="#">Link: foo.com</a>
-      </section>
-      <section>
-        Title: Static Webpage | Summary | Key Features | Stack Used |
-        <a href="#">Link: foo.com</a>
-      </section>
-    </div>
-    <div class="#">
-      <h3>Education</h3>
-      <section>
-        Community College of Allegheny County | Associate's Degree
-      </section>
-      <section>
-        Arizona State University | Bachelor's Degree (In Progress)
-      </section>
-    </div>
-    <div class="#">
-      <h3>Experience</h3>
-      <section>
-        UPMC Children's Hospital of Pittsburgh | Patient Care Technician &
-        Patient Transport
-      </section>
-      <section>UPMC Shadyside Hospital | Patient Care Technician</section>
-    </div>
-    <footer>
-      <h3>This resume is a live document updated regularly</h3>
-      <a href="#">Github</a> | <a href="#">Linkedin</a> |
-      <a href="">Back to Top</a>
-    </footer>
+
+    <script>
+      function toggleTheme() {
+        document.body.dataset.theme =
+          document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+      }
+    </script>
   </body>
 </html>
-
-<!-- I began this project abou a week ago but made no progress -->
-<!-- Today is Friday July 12, 2025 and I am going to begin adding information to this website that will serve as my digital resume -->

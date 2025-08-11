@@ -1,24 +1,124 @@
-* {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  /* border: 1px solid black; */
-  /* margin: 20px 10px; */
-  padding: 5px;
+/* ========================
+   Base styles (mobile-first)
+   ======================== */
+:root {
+  --font-main: Georgia, 'Times New Roman', Times, serif;
+
+  /* Light mode colors */
+  --bg-gradient-light: radial-gradient(circle, white 60%, #ccc 100%);
+  --text-light: #222;
+
+  /* Dark mode colors */
+  --bg-gradient-dark: radial-gradient(circle, black 60%, #555 100%);
+  --text-dark: #f4f4f4;
+
+  /* Common spacing */
+  --max-width: 900px;
+  --padding: 1rem;
 }
 
-h1 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1rem;
-}
-
-header {
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: var(--bg-gradient-light);
+  color: var(--text-light);
   display: flex;
+  justify-content: center;
+  padding: var(--padding);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-img {
-  width: 12rem;
-  height: 12rem;
+/* Light mode link colors */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:visited {
+  color: #5a3d99;
 }
 
-/* add media queries for mobile first design. Set a breakpoint for small, medium and large screens and make adjustments for the layout with grow and shrink basis */
+/* ========================
+   Layout & components
+   ======================== */
+.resume {
+  width: 100%;
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile: one column */
+  gap: 1.5rem;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .resume {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header,
+  footer {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding: 2rem;
+  }
+}
+
+header img {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.resume section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: var(--padding);
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+/* Toggle button styling */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 2px solid currentColor;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #000; /* Light mode text color */
+}
+
+/* ========================
+   Dark mode overrides
+   ======================== */
+body[data-theme='dark'] {
+  background: var(--bg-gradient-dark);
+  color: var(--text-dark);
+}
+
+/* Dark mode link colors */
+body[data-theme='dark'] a {
+  color: #66aaff;
+}
+body[data-theme='dark'] a:visited {
+  color: #cba6ff;
+}
+
+body[data-theme='dark'] .resume section {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Dark mode button text */
+body[data-theme='dark'] .theme-toggle {
+  color: #fff;
+}
