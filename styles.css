@@ -1,34 +1,36 @@
-/* ========================
-   Base styles (mobile-first)
-   ======================== */
 :root {
   --font-main: Georgia, 'Times New Roman', Times, serif;
 
   /* Light mode colors */
-  --bg-gradient-light: radial-gradient(circle, white 60%, #ccc 100%);
+  --bg-light: #fff;
   --text-light: #222;
 
   /* Dark mode colors */
-  --bg-gradient-dark: radial-gradient(circle, black 60%, #555 100%);
+  --bg-sides-dark: #121212;
+  --bg-body-dark: #000000;
   --text-dark: #f4f4f4;
 
-  /* Common spacing */
   --max-width: 900px;
   --padding: 1rem;
+}
+
+/* Page sides background */
+html {
+  background-color: var(--bg-sides-dark);
 }
 
 body {
   margin: 0;
   font-family: var(--font-main);
-  background: var(--bg-gradient-light);
+  background: var(--bg-light);
   color: var(--text-light);
   display: flex;
   justify-content: center;
   padding: var(--padding);
+  min-height: 100vh;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Light mode link colors */
 a {
   color: #0066cc;
   text-decoration: none;
@@ -37,15 +39,22 @@ a:visited {
   color: #5a3d99;
 }
 
-/* ========================
-   Layout & components
-   ======================== */
 .resume {
   width: 100%;
   max-width: var(--max-width);
+  background-color: var(--bg-light);
   display: grid;
-  grid-template-columns: 1fr; /* Mobile: one column */
+  grid-template-columns: 1fr;
   gap: 1.5rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: var(--padding);
+
+  /* Border + shadow for light mode */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 
 header,
@@ -57,7 +66,6 @@ footer {
   .resume {
     grid-template-columns: 1fr 1fr;
   }
-
   header,
   footer {
     grid-column: span 2;
@@ -84,7 +92,6 @@ header img {
   transition: background 0.3s ease;
 }
 
-/* Toggle button styling */
 .theme-toggle {
   position: fixed;
   top: 1rem;
@@ -95,18 +102,21 @@ header img {
   border: 2px solid currentColor;
   border-radius: 6px;
   font-size: 0.9rem;
-  color: #000; /* Light mode text color */
+  color: #000;
 }
 
-/* ========================
-   Dark mode overrides
-   ======================== */
+/* Dark mode */
 body[data-theme='dark'] {
-  background: var(--bg-gradient-dark);
+  background: var(--bg-body-dark);
   color: var(--text-dark);
 }
 
-/* Dark mode link colors */
+body[data-theme='dark'] .resume {
+  background-color: var(--bg-body-dark);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
 body[data-theme='dark'] a {
   color: #66aaff;
 }
@@ -118,7 +128,6 @@ body[data-theme='dark'] .resume section {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* Dark mode button text */
 body[data-theme='dark'] .theme-toggle {
   color: #fff;
 }
