@@ -1,17 +1,11 @@
 ## 📄 Welcome to my resume
+- Updated: Thursday September 11, 2025
+- Check out my live resume [here](https://ventura-christian.github.io/HTML-Resume/)
 
-### 🌱 Check Back for Updates
 
+## 🌱 Check Back for Updates
 This is a living document that will be updated as I gain new skills, learn new technologies, or build new projects.
 
----
-
-### 🔗 Other Links
-
-I will incorporate this resume in my other repository, "git-init-my-career", linked <a href="https://github.com/ventura-christian/git-init-my-career">here </a> which serves as a hangout for the ideas and projects I am currently working on as my path towards employment expands.
-
----
-
-### ✉️ Contact Me
-
-Feel free to email me at <a href="mailto:cventura64@outlook.com"> outlook</a> or <a href="mailto:cventur6@asu.edu">ASU</a>.
+## ✉️ Contact Me
+- Email me at <a href="mailto:cventura64@outlook.com">cventura64@outlook.com</a>.
+- Call me at (562)340-5964
