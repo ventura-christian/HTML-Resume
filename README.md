@@ -1,6 +1,6 @@
 ## 📄 Welcome to my resume
 
-- Updated: January 4, 2026
+- Updated: January 18, 2026
 - Check out my live resume [here](https://ventura-christian.github.io/HTML-Resume/)
 
 ## 🌱 Check Back for Updates
