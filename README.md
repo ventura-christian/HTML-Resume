@@ -1,7 +1,9 @@
 ## 📄 Welcome to my resume
 
-- Updated: January 18, 2026
-- Check out my live resume [here](https://ventura-christian.github.io/HTML-Resume/)
+- Updated: May 13, 2026
+
+## Webpage Link
+[Live Demo](https://ventura-christian.github.io/HTML-Resume/)
 
 ## 🌱 Check Back for Updates
 This is a living document that will be updated as I gain new skills, learn new technologies, or build new projects.
