@@ -12,4 +12,4 @@ This is a living document that will be updated as I gain new skills, learn new t
 
 ## ✉️ Contact Me
 
-Email me at <cventura64@outlook.com>
+Email me at **<cventura64@outlook.com>**
